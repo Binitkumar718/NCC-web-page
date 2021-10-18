@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- this the navigation bar--> 
+
+<nav class="nav">
+  <div class="small-logo" id="smllogo"></div>
+  <ul class="link">
+    <li><button class="tablink" onclick="openPage('Home', this, '#3787BA')"  id="defaultOpen"> home </button> </li>
+    <li><button class="tablink" onclick="openPage('Learn', this, '#3787BA')"> learn</button> </li>
+    <li><button class="tablink" onclick="openPage('News', this, '#3787BA')"> news </button></li>
+    <li><button class="tablink" onclick="openPage('Gallery', this, '#3787BA')" > gallery</button</li>
+  </ul>
+  <a class="burger"> 
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </a>
+</nav>
+
+<!-- this the header this will contain logo and name--> 
+<section id="Home" class="tabcontent">
+  <header class="head ">
+
+    <div class="nit"> <img src="./nitap-removebg-preview.png" alt=""></div>
+
+    <div class="center"> 
+       <div>
+         <p>राष्ट्रीय कैडेट कोर</p><h1>National Cadet Corps</h1></div>
+       <HR></HR>
+       <DIV><h1>NIT Arunachal Pradesh</h1></DIV>
+    </div>
+    <div class="ncc"><img src="./im-removebg-preview (1).png" alt=""></div>
+  </header>
+<!-- this is the content section--> 
+<!--news sectionis here-->
+  <section class="body">
+
+    <div class="news"> 
+      <div class="box">whats new</div>
+  
+      <div class="newss"> today is the day </div></div>
+
+      <!-- coreusol is here-->
+      <div class="container">
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+        
+            <img src="./men-g01bba6c28_640.jpg" style="width:100%">
+           
+          </div>
+          
+          <div class="mySlides fade">
+           
+            <img src="./police-ga5598d913_640.jpg" style="width:100%">
+         
+          </div>
+          
+          <div class="mySlides fade">
+           
+            <img src="./men-g01bba6c28_640.jpg" style="width:100%">
+            
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          
+
+  <div class="message-area">
+    <div class="teacher">
+  <div class="image-area"> <img src="./blank-profile-picture-g65bf49a3f_640.png" alt=""></div>
+  <p><i>founder of founder's founder</i></p>
+  <span class="name"><h3> greatgarnddpa of john cena</h3></span>
+   <p class="discription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore perferendis laboriosam mollitia explicabo in nam similique recusandae quos odio voluptates? <a href="#">readmore</a></p> 
+
+
+ 
+  </div>
+ 
+    <div class="teacher">
+  <div class="image-area"> <img src="./blank-profile-picture-g65bf49a3f_640.png" alt=""></div>
+ <p><i>founder'sfounder</i></p>
+  <span class="name"><h3> pa of john cena</h3></span>
+   <p class="discription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore perferendis laboriosam mollitia explicabo in nam similique recusandae quos odio voluptates? <a href="#">readmore</a> </p> 
+
+
+  
+ 
+  </div>
+ 
+    <div class="teacher">
+  <div class="image-area"> <img src="./blank-profile-picture-g65bf49a3f_640.png" alt=""></div>
+   <p><i>ceo and founder</i></p>
+  <span class="name"><h3>john cena</h3></span>
+   <p class="discription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore perferendis laboriosam mollitia explicabo in nam similique recusandae quos odio voluptates? <a href="#">readmore</a></p> 
+
+  
+  </div>
+  </div>
+
+    <div class="learn temp"><h1>you can learn everthing about ncc here</h1></div>
+  </section>
+</section>
+<!--here starts news section-->
+<section id="News" class="tabcontent">
+  <h1> no content yet</h1>
+
+
+</section>
+<!--here starts learn section-->
+<section id="Learn" class="tabcontent">
+  <h1> no content yet</h1>
+</section>
+
+
+<!--here starts gallery section-->
+<section id="Gallery" class="tabcontent">
+
+  <div class="galhead"> <h1>PHOTOS OF NCC NIT AP</h1>
+  <hr></div>
+
+  <div class="full-img" id="fullImgBox">
+    <img src=""  id="fullImg" alt=" empty">
+    <span onclick="closeFullImg()" >X</span>
+</div>
+  <div class="row">
+    <div class="column">
+      <img src="./img1.jpg" onclick="openFullImg(this.src)">
+      <img src="./img2.jpg" onclick="openFullImg(this.src)">
+      <img src="./img3.jpg" onclick="openFullImg(this.src)">
+      <img src="./img4.jpg"onclick="openFullImg(this.src)">
+      
+      
+    </div>
+    <div class="column">
+      <img src="./img5.jpg" onclick="openFullImg(this.src)">
+      <img src="./img6.jpg" onclick="openFullImg(this.src)">
+      <img src="./img7.jpg"onclick="openFullImg(this.src)">
+      <img src="./img8.jpg" onclick="openFullImg(this.src)">
+   
+    </div>
+    <div class="column">
+      <img src="./img9.jpg" onclick="openFullImg(this.src)">
+      <img src="./img10.jpg" onclick="openFullImg(this.src)">
+      <img src="./img11.jpg" onclick="openFullImg(this.src)">
+      <img src="./img5.jpg" onclick="openFullImg(this.src)">
+      
+    </div>
+  
+  </div>
+</section>
+
+<!-- here is the footer--> 
+  <footer class="foot temp"> this is footer</footer>
+
+</body>
+<script src="my.js"> </script>
+</html>
