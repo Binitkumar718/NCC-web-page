@@ -28,7 +28,7 @@ function showSlides(n) {
 }
 
 
-// js for menu//
+// js for menu
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.link');
@@ -47,7 +47,7 @@ const navSlide = () => {
   navSlide();
 
 
-   //js for nav content change//
+   /*//js for nav content change//
    function openPage(pageName, elmnt, color) {
    
 
@@ -71,7 +71,7 @@ const navSlide = () => {
   }
   
   
-  document.getElementById("defaultOpen").click();
+  document.getElementById("defaultOpen").click();*/
 
   // script for image gallery 
   var fullImgBox =document.getElementById("fullImgBox");
