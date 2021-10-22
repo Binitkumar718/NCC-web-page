@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Nitap</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- this the navigation bar--> 
+
+<nav class="nav">
+    <div class="small-logo" id="smllogo"></div>
+    <ul class="link">
+      <li><a class="tablink" href="index.html"> home </a> </li>
+      <li><a class="tablink" href="learn.html" > learn</a> </li>
+      <li><a class="tablink" href="gallery.html"> gallery</a</li>
+      <li><a class="tablink" href="news.html" > news </a></li>
+      
+    </ul>
+    <a class="burger"> 
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </a>
+  </nav>
+  
+
+    
+<!-- ///////////////////////////////-->
+<!-- ///////////////////////////////-->
+<!-- ///////////////////////////////-->
+<!-- ///////////////////////////////-->
+<!-- ///////////////////////////////-->
+<!--here starts gallery section-->
+<section id="Gallery" class="tabcontent">
+
+  <div class="galhead"> <h1>PHOTOS OF NCC NIT AP</h1>
+  <hr></div>
+
+  <div class="full-img" id="fullImgBox">
+    <img src=""  id="fullImg" alt=" empty">
+    <span onclick="closeFullImg()" >X</span>
+</div>
+  <div class="row">
+    <div class="column">
+      <img src="./img1.jpg" onclick="openFullImg(this.src)">
+      <img src="./img2.jpg" onclick="openFullImg(this.src)">
+      <img src="./img3.jpg" onclick="openFullImg(this.src)">
+      <img src="./img4.jpg"onclick="openFullImg(this.src)">
+      
+      
+    </div>
+    <div class="column">
+      <img src="./img5.jpg" onclick="openFullImg(this.src)">
+      <img src="./img6.jpg" onclick="openFullImg(this.src)">
+      <img src="./img7.jpg"onclick="openFullImg(this.src)">
+      <img src="./img8.jpg" onclick="openFullImg(this.src)">
+   
+    </div>
+    <div class="column">
+      <img src="./img9.jpg" onclick="openFullImg(this.src)">
+      <img src="./img10.jpg" onclick="openFullImg(this.src)">
+      <img src="./img11.jpg" onclick="openFullImg(this.src)">
+      <img src="./img5.jpg" onclick="openFullImg(this.src)">
+      
+    </div>
+  
+  </div>
+  <!-- here is the footer--> 
+  <footer class="foot temp"> this is footer</footer>
+
+</section>
+</body>
+<script src="gl.js"></script>
+</html>

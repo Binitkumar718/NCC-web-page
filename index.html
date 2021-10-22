@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>NCC Nitap</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,15 +16,18 @@
 <nav class="nav">
   <div class="small-logo" id="smllogo"></div>
   <ul class="link">
-    <li><button class="tablink" onclick="openPage('Home', this, '#3787BA')"  id="defaultOpen"> home </button> </li>
-    <li><button class="tablink" onclick="openPage('Learn', this, '#3787BA')"> learn</button> </li>
-    <li><button class="tablink" onclick="openPage('News', this, '#3787BA')"> news </button></li>
-    <li><button class="tablink" onclick="openPage('Gallery', this, '#3787BA')" > gallery</button</li>
+    <li><a class="tablink" href="index.html"> home </a> </li>
+    <li><a class="tablink" href="learn.html" > learn</a> </li>
+    <li><a class="tablink" href="gallery.html"> gallery</a</li>
+    <li><a class="tablink" href="news.html" > news </a></li>
+  
   </ul>
   <a class="burger"> 
     <div class="line1"></div>
+    
     <div class="line2"></div>
     <div class="line3"></div>
+   
   </a>
 </nav>
 
@@ -127,48 +130,21 @@
 
 
 </section>
+<!-- ///////////////////////////////-->
+<!-- ///////////////////////////////-->
+<!-- ///////////////////////////////-->
+<!-- ///////////////////////////////-->
+<!-- ///////////////////////////////-->
 <!--here starts learn section-->
 <section id="Learn" class="tabcontent">
-  <h1> no content yet</h1>
-</section>
-
-
-<!--here starts gallery section-->
-<section id="Gallery" class="tabcontent">
-
-  <div class="galhead"> <h1>PHOTOS OF NCC NIT AP</h1>
-  <hr></div>
-
-  <div class="full-img" id="fullImgBox">
-    <img src=""  id="fullImg" alt=" empty">
-    <span onclick="closeFullImg()" >X</span>
+ <div class="cont">
+   <div class="side">
+<h1>this is side var</h1>
+ </div> 
+ <div class="main"> this is content</div>
 </div>
-  <div class="row">
-    <div class="column">
-      <img src="./img1.jpg" onclick="openFullImg(this.src)">
-      <img src="./img2.jpg" onclick="openFullImg(this.src)">
-      <img src="./img3.jpg" onclick="openFullImg(this.src)">
-      <img src="./img4.jpg"onclick="openFullImg(this.src)">
-      
-      
-    </div>
-    <div class="column">
-      <img src="./img5.jpg" onclick="openFullImg(this.src)">
-      <img src="./img6.jpg" onclick="openFullImg(this.src)">
-      <img src="./img7.jpg"onclick="openFullImg(this.src)">
-      <img src="./img8.jpg" onclick="openFullImg(this.src)">
-   
-    </div>
-    <div class="column">
-      <img src="./img9.jpg" onclick="openFullImg(this.src)">
-      <img src="./img10.jpg" onclick="openFullImg(this.src)">
-      <img src="./img11.jpg" onclick="openFullImg(this.src)">
-      <img src="./img5.jpg" onclick="openFullImg(this.src)">
-      
-    </div>
-  
-  </div>
 </section>
+
 
 <!-- here is the footer--> 
   <footer class="foot temp"> this is footer</footer>
