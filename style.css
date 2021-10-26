@@ -13,20 +13,19 @@
   color: black;
 }
 /* here is the styling of logo*/
-.small-logo{
-   background-image: url(./im-removebg-preview\ \(1\).png);
+.small-logo img{
    width: 60px;
-   height: 60px;
-   background-size: cover;
-
+   height: 50px;
 }
 /* navigation is styled here */
 .nav{
+   position: relative;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
    background-color: #260075;
    height: 12vh;
+   box-shadow: 1px 1px 30px black;
 }
 .nav ul{
     display: flex;
@@ -52,14 +51,14 @@
 
 .nav a:hover{
    color: #6b4c4c;
-    background-color: #3787BA;
+   
   }
 
 /*for responsive STYLING */
 
 .burger{
    display:none;
-
+  
  }
 
  .line1,.line2,.line3{
@@ -78,7 +77,8 @@
    }
    .nav{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
+      position: relative;
    }
 
    body{
@@ -271,7 +271,7 @@ img {
     background-color:#260075;border-radius: 5px;
 }
 .newss{
-   border-radius: 5px;
+  
    color: black;
    font-weight: bolder;
     background-color:#3787BA; width: 100%;
