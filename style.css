@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin:0;
+    scroll-behavior: smooth;
 }
 
 .temp{
@@ -43,12 +44,16 @@
     width: 100%;
     font-size: larger;
     border: none;
-    border-radius: 10px;
+    padding: 14px 16px;
+  font-size: 17px;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-
+.link .active{
+   background-color: #161616;
+   color:white;
+}
 .nav a:hover{
    color: #6b4c4c;
    
@@ -162,7 +167,7 @@
 }
 
 /* HERE STARTS THE STYLING OF THE BODY */
-* {box-sizing: border-box}
+
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
@@ -196,7 +201,10 @@ img {vertical-align: middle;}
  border-radius: 3px 0 0 3px;
 }
 
-
+#content{
+    max-width: 1300px;
+    margin: auto;
+}
 .prev:hover, .next:hover {
  background-color: rgba(0,0,0,0.8);
 }
