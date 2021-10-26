@@ -1,29 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCC Nitap</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .contain{
-            display: flex;
-        }
-        .contain .aside{
-            border: 1px solid black;
-            height: auto;
-            flex-grow: 1;
-        }
-        .contain .main{
-            border: 1px solid black;
-            height: auto;
-            flex: 3;
-        }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+*{box-sizing: border-box;
+
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+ 
+}
+
+
+/* Style tab links */
+.tablink {
+  background-color: #3787BA;
+  color: black;
+  display :flex;
+  flex-direction:column;
+  border: none;
+  
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 100%;
+}
+
+.tablink:hover {
+  background-color: rgb(2, 1, 1);
+  color: white;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 10px 20px;
+  height: 100%;
+  
+}
+.cont{
+ display:flex;
+ max-width: 1000px;
+margin: auto;
+
+ }
+ .cont .aside{
+   margin: 10px;
+   width: 250px;
+ 
+  }
+  .cont .aside button{
+       border: 1px solid black;
+  }
+
+
+  .cont .main{
+   width: 750px;
+   height:auto;
+   
+   }
+   .cont .main p{
+       line-height: 30px;
+       font-size: larger;
+   }
+ 
+
+
+</style>
 </head>
 <body>
-    <!--navigation starts here-->
+<!-- this is navigation-->
+<!-- -->
+<!-- -->
+<!-- -->
+<!---->
+<!-- -->
+<!---->
     <nav class="nav">
         <div class="small-logo" id="smllogo"> <img src="./im-removebg-preview (1).png" alt="ncc-logo"></div>
         <ul class="link">
@@ -42,33 +101,223 @@
       </nav>
       
 
-      <!-- content -->
+<section class="content">
+<!-- this  content -->
 
-      <section class="learn">
-<div class="contain">
-        <div class="aside">
-           <ul>
-               <li> ncc moto </li>
-               <li> ncc song</li>
-               <li> ncc rule</li>
-               <li> ncc certification </li>
-               <li> ncc benifits</li>
-               <li> ncc aim </li>
-               <li> ncc establishment</li>
-               <li> ncc pledge</li>
-               <li> ncc logo </li>
-               <li> ncc camp</li>
-               <li> ncc </li>
-               <li> ncc</li>
-               <li> ncc</li>
-           </ul>
 
-        </div>
-        <div class="main">meh</div>
-        </div>
-      </section>
-      <!-- here is the footer--> 
+<div class= "cont">
+
+<!-- this s topic list-->
+
+<div class="aside">
+<button class="tablink" onclick="openPage('about', this)" id="defaultOpen">about</button>
+<button class="tablink" onclick="openPage('history', this)" >history</button>
+<button  class="tablink" onclick="openPage('certificate', this)">motto</button>
+<button class="tablink" onclick="openPage('genesis', this)">why</button>
+</div>
+<!-- this is topic content-->
+
+<div class="main">
+<div id="about" class="tabcontent">
+  <h3>ABOUT</h3>
+
+  <ol> 
+      <li>
+          <p>AIM OF NCC</p>
+      </li>
+  </ol>
+  <BR></BR>
+  <h4>AIM</h4>
+  <br>
+  <br>
+  <p>The ‘Aims’ of the NCC laid out in 1988 have stood the test of time and continue to meet the 
+      requirements expected of it in the current socio–economic scenario of the country. 
+      The NCC aims at developing character, comradeship, discipline, a secular outlook,
+       the spirit of adventure and ideals of selfless service amongst young citizens. Further, 
+       it aims at creating
+       a pool of organized, trained and motivated youth with leadership qualities in
+        all walks of life, who will serve the Nation regardless of which career they choose.
+         Needless to say, the NCC also provides an environment conducive to motivating young 
+         Indians to join the armed forces.</p>
+
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+</div>
+
+<div id="history" class="tabcontent">
+  <h3>history</h3>
+  <br>
+  <br>
+  <p>NCC was first started in 1666 in Germany. The NCC in India was formed with the National Cadet Corps Act of 1948. It was raised on 15 July 1948. The origin of NCC can be traced back to the ‘University Corps’, which was created under the Indian Defence Act 1917, with the objective to make up the shortage of the Army. In 1920, when the Indian Territorial Act was passed, the ‘University Corps’ was replaced by the University Training Corps (UTC). The aim was to raise the status of the UTC and make it more attractive to the youth. The UTC Officers and cadets dressed like the army. It was a significant step towards the Indianisation of armed forces. It was rechristened in the form of UOTC so the National Cadet Corps can be considered as a successor of the University Officers Training Corps (UOTC) which was established by the British Government in 1942. During World War II, the UOTC never came up to the expectations set by the British. This led to the idea that some better schemes should be formed, which could train more young men in a better way, even during peace. A committee headed by Pandit H.N. Kunzru recommended a cadet organization to be established in schools and colleges at a national level. The National Cadet Corps Act was accepted by the Governor General and on 15 July 1948 the National Cadet Corps came into existence.
+
+    In 1949, the Girls Division was raised in order to give equal opportunities to school and college going girls. The NCC was given an inter-service image in 1950 when the Air Wing was added, followed by the Naval Wing in 1952. Same year, the NCC curriculum was extended to include community development/social service activities as a part of the NCC syllabus at the behest of Late Pandit Jawaharlal Nehru who took keen interest in the growth of the NCC. Following the 1962 Sino-Indian War, to meet the requirement of the Nation, the NCC training was made compulsory in 1963. In 1968, the Corps was again made voluntary.
+    
+    During Indo-Pakistani war of 1965 & Bangladesh-Pakistani war of 1971, NCC cadets were second line of defence. They organized camp to assist ordnance factories, supplying arms and ammunition to the front and also were used as patrol parties to capture enemy paratroopers. The NCC cadets also worked hand in hand with the Civil defenceauthorities and actively took part in rescue works and traffic control.
+    
+    After 1965 and 1971 wars NCC syllabus was revised. Rather than just being second line of defence, NCC syllabus laid greater stress on developing quality of leadership and officer like qualities. The military training which the NCC cadets received was reduced and greater importance was given to other areas like social service and youth management.</p> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+
+<div id="certificate" class="tabcontent">
+  <h3>motto</h3>
+  <br>
+  <br>
+  <p>MOTO OF NCC
+    The motto of NCC is ‘Unity & Discipline’ which was adopted on 23 Dec 1957. In living up to its motto, the NCC strives to be and is one of the greatest cohesive forces of the nation, bringing together the youth hailing from different parts of the country and molding them into united, secular and disciplined citizens of the nation.
+    
+    
+<br>
+<br>
+    <h4>“UNITY AND DISCIPLINE”</h4>
+    <br>
+    AIMS OF NCC
+    <br>
+    <br>
+    (a) To develop qualities of character, courage, comradeship, discipline, leadership, secular outlook, spirit of adventure & sportsmanship and the ideals of selfless service among the youth to make them useful citizens.
+    
+   <br> 
+   <br>
+   (b) To create a human resources of organized, trained and motivated youth to provide leadership in all walks of life including the Armed Forces and always available for the service of the Nation.
+    
+   <br>
+   <br> (c) To create suitable environment to motivate the youth to take up a career in the Armed Forces.
+    
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+<div id="genesis" class="tabcontent">
+  <h3>WHY </h3>
+  <br>
+  <br>
+  <p>The NCC in India was formed with theNational Cadet Corps Act of 1948. It was raised on 15 July 1948. The origin of NCC can be traced back to the ‘University Corps‘, which was created under the Indian Defence Act 1917, with the objective to make up the shortage of the Army.
+
+    It is open to school and college students on voluntary basis. National Cadet Corps is a Tri-Services Organization, comprising the Army, Navy and Air Force, engaged in grooming the youth of the country into disciplined and patriotic citizens. The National Cadet Corps in India is a voluntary organization which recruits cadets from schools, colleges and universities all over India. The Cadets are given basic military training in small arms and parades. The officers and cadets have no liability for active military service once they complete their course but are given preference over normal candidates during selections based on the achievements in the corps.
+    
+    The NCC was given an inter-service image in 1950 when the Air Wing was added, followed by the Naval Wing in 1952. Same year, the NCC curriculum was extended to include community development/social service activities as a part of the NCC syllabus at the behest of Late Pandit Jawaharlal Nehru who took keen interest in the growth of the NCC. Following the 1962 Sino-Indian war, to meet the requirement of the Nation, the NCC training was made compulsory in 1963. In 1968, the Corps was again made voluntary.
+    
+    During Indo-Pakistani war of 1965, NCC cadets were second line of defence. They organized camp to assist ordnance factories, supplying arms and ammunition to the front and also were used as patrol parties to capture enemy paratroopers. The NCC cadets also worked hand in hand with the Civil defenceauthorities and actively took part in rescue works and traffic control.
+    
+    After 1965 and 1971 wars NCC syllabus was revised. Rather than just being second line of defence, NCC syllabus laid greater stress on developing quality of leadership and officer like qualities. The military training which the NCC cadets received was reduced and greater importance was given to other areas like social service and youth management.
+    
+    Certificate – B : It can be written by SD / SW cadets of NCC, cadets after class 10 & those studying for +2, +3 (degree). In the second year of training they can appear for the same.The candidate must have attended a minimum 75% of total training periods laid down in the syllabus for the first & second years of SD/SW NCC (All Wings).He/She must have attended one Annual Training Camp/NIC. Cadets possessing ‘A’ certificate will be awarded 10 bonuses marks.An air wing cadet must do a minimum 10 Glide launches.
+    
+    Certificate – C: It is the most important certificate for NCC cadet. Now it can be written in the 3rd year of training, in the 3rd year of degree course / those having B certificate can write it in the first year after his +2 and in the 1st year of degree by SD / SW cadets only.The candidate must be possessing a ‘B’ certificate Must have attended two ATCs or one ATC and in addition to it RD Camp Delhi,Centrally Organised Camp,Para Training Camp,Attachment Training with service units,National Integration Camp,Youth Exchange Programme,Foreign Cruise(Navy).</p>
+</div>
+</div></div>
+</section>
+
+  <!-- here is the footer--> 
   <footer class="foot temp"> this is footer</footer>
+
+<script>
+function openPage(pageName,elmnt) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.link');
+
+    
+ 
+     burger.addEventListener('click',()=>{
+       nav.classList.toggle('nav-active');
+
+       burger.classList.toggle('toggle');
+     });
+
+     
+    
+  }
+  navSlide();
+
+</script>
+   
 </body>
-<script src="learn.js"> </script>
-</html>
+</html> 
