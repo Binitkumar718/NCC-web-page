@@ -1,5 +1,5 @@
 
-// js for slideshow 
+/* js for slideshow 
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,7 +27,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+*/
 // js for menu
 const navSlide = () => {
     const burger = document.querySelector('.burger');
