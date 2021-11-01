@@ -51,7 +51,7 @@
     <div class="news"> 
      <div class="box"><a href="./news.html" style="text-decoration: none; color: white;">whats new  </a></div> 
  
-      <div class="newss"> <marquee behavior="slide" direction="left" loof="infinite"> <p style="padding-top:10px ;">today is the day </p> </marquee></div></div>
+      <div class="newss"> <marquee behavior="slide" direction="left" loof="infinite"> <p style="padding-top:10px ;"><a href="./news.html">today is the day</a>  </p> </marquee></div></div>
  <div id="content">
       <!-- coreusol is here-->
       <!-- <div class="container">
@@ -143,14 +143,8 @@
   </div>
   </div>
 
-    <div class="learn temp"><h1>you can learn everthing about ncc here</h1></div>
+    
   </section>
-</section>
-<!--here starts news section-->
-<section id="News" class="tabcontent">
-  <h1> no content yet</h1>
-
-
 </section>
 <!-- ///////////////////////////////-->
 <!-- ///////////////////////////////-->
@@ -158,19 +152,49 @@
 <!-- ///////////////////////////////-->
 <!-- ///////////////////////////////-->
 <!--here starts learn section-->
-<section id="Learn" class="tabcontent">
- <div class="cont">
-   <div class="side">
-<h1>this is side var</h1>
- </div> 
- <div class="main"> this is content</div>
-</div></div>
-</section>
+ <section  id="learn-photo"> 
+   <div class="glry"> 
+     <div class="display"> 
+       <img src="./img1.jpg"  id="imgdisplay" alt="">
+        <span><a href="./gallery.html"><button id="view-all"> view all</button></a></span>
+     </div>
+
+    <div class="show">
+      <div class="showphoto">
+        <img src="./img1.jpg" alt="1" onclick="change(this.src);">
+      </div>
+    <div class="showphoto"
+    ><img src="./img2.jpg" alt="2" onclick="change(this.src);">
+  </div>
+    <div class="showphoto"
+    ><img src="./img4.jpg" alt="3" onclick="change(this.src);">
+  </div>
+    <div class="showphoto">
+      <img src="./img3.jpg" alt="4" onclick="change(this.src);">
+    </div>
+  </div>
+
+   </div>
+  <div class="learn "><h1> <b>AIM OF NCC</b> 
+  </h1>
+  <p><b>The ‘Aims’ of the NCC laid out in 1988 have stood the test of time and continue to meet the requirements expected of it in the current socio–economic scenario of the country. The NCC aims at developing character, comradeship, discipline, a secular outlook, the spirit of adventure and ideals of selfless service amongst young citizens. Further, it aims at creating a pool of organized, trained and motivated youth with leadership qualities in all walks of life, 
+    who will serve the Nation regardless of which career they choose. </b></p>
+  <button > <a href="./learn.html" > read more </a></button></div>
+ </section>
+
 
 
 <!-- here is the footer--> 
   <footer class="foot temp"> this is footer</footer>
 
 </body>
-<script src="my.js"> </script>
+<script src="my.js"> 
+function change(x) {
+  var expandImg = document.getElementById("imgdisplay");
+  
+  expandImg.src = x;
+ 
+
+}
+  </script>
 </html>

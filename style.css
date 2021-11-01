@@ -170,20 +170,25 @@
 
 #slideshow{
    overflow: hidden;
-   height: 400px;
-   width: 700px;
+   height: 600px;
+   width: 1000px;
    margin: auto;
+   border-radius: 6px;
 }
 
 .slides{
    float: left;
-   height: 400px;
-   width: 700px;
+   height: 600px;
+   width: 1000px;
 
 }
+.slides img{
+   width: 100%;
+   height: 100%;
+}
 .slide-wrapper{
-   width: calc(700px*4);
-   animation: slide 15s ease infinite;
+   width: calc(1000px*4);
+   animation: slide 20s ease infinite;
 }
 
 @keyframes slide{
@@ -192,13 +197,13 @@
       margin-left: 0px;
   }
   40% {
-      margin-left: calc(-700px * 1);
+      margin-left: calc(-1000px * 1);
   }
   60% {
-      margin-left: calc(-700px * 2);
+      margin-left: calc(-1000px * 2);
   }
   80% {
-      margin-left: calc(-700px * 3);
+      margin-left: calc(-1000px * 3);
   }
 }
 
@@ -472,6 +477,91 @@ background-color: white;
    }
  }
 
+/*styling of gallery section*/
+
+.glry{
+    display: flex;
+    max-width:1000px;
+    margin: auto;
+}
+.display{
+   margin: 15px;
+padding: 10px;
+}
+.display img{
+   width: 100%;
+   border: 4px solid white;
+}
+.display button{
+   width: 20vh;
+   height: 5vh;
+   border: 2px solid white;
+   background-color: #260075;
+   border-radius: 3px;
+   color: white;
+   margin-top:10px ;
+
+}
+.show{
+   display: flex;
+   flex-direction: column;
+   width: 25%;
+   padding: 15px;
+}
+.show img{
+   width: 100%;
+   padding:0;
+   margin: 10px 10px 10px 0px;
+   border: 4px solid white;
+   opacity: 0.8;
+   cursor: pointer;
+}
+.show img:hover{
+   opacity: 1;
+   transform: scale(1.1);
+}
+
+
+ /*styling of learn section*/
+
+ .learn{
+    width: 70%;
+    margin: auto;
+    padding:30px ;
+    background-color: #260075;
+    color: white; max-width:1000px;
+ 
+ }
+ .learn h1{
+    padding: 0px 0px 8px 0px;
+
+ }
+ .learn p{
+  padding:  0px 0px 8px 0px;
+  line-height: 20px;
+ }
+ .learn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+ }
+ .learn button{
+    width: 20vh;
+    height: 5vh;
+    border: 2px solid white;
+    background-color: #260075;
+    border-radius: 3px;
+
+ }
+ #learn-photo{
+    display: flex;
+   
+    margin: 20px auto ;
+    background-color: #260075;
+    height: auto;
+    flex-wrap: wrap;
+    
+ }
  /* below this is for footer*/
 
 .foot{
