@@ -161,16 +161,16 @@
 
     <div class="show">
       <div class="showphoto">
-        <img src="./img1.jpg" alt="1" onclick="change(this.src);">
+        <img src="./img1.jpg" alt="1" onclick="change(this);">
       </div>
     <div class="showphoto"
-    ><img src="./img2.jpg" alt="2" onclick="change(this.src);">
+    ><img src="./img2.jpg" alt="2" onclick="change(this);">
   </div>
     <div class="showphoto"
-    ><img src="./img4.jpg" alt="3" onclick="change(this.src);">
+    ><img src="./img4.jpg" alt="3" onclick="change(this);">
   </div>
     <div class="showphoto">
-      <img src="./img3.jpg" alt="4" onclick="change(this.src);">
+      <img src="./img3.jpg" alt="4" onclick="change(this);">
     </div>
   </div>
 
@@ -185,14 +185,21 @@
 
 
 <!-- here is the footer--> 
-  <footer class="foot temp"> this is footer</footer>
+  <footer class="foot temp"><H1 style="font-weight: normal; font-size: medium;"> &copy NATIONAL INSTITUTE OF TECHNOLOGY ,JOTE . ARUNCHAL PRADESH</H1>
+  <div><p>links</p>
+  <div> fb</div>
+  <div> youtube</div>
+  <div> insta</div>
+  <div> phub i mean git hub</div>
+  </div>
+  </footer>
 
 </body>
 <script src="my.js"> 
 function change(x) {
   var expandImg = document.getElementById("imgdisplay");
   
-  expandImg.src = x;
+  expandImg.src = x.src;
  
 
 }
