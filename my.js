@@ -84,3 +84,13 @@ const navSlide = () => {
   function closeFullImg(){
       fullImgBox.style.display="none";
   }
+
+  //small gallery
+
+  function change(x) {
+    var expandImg = document.getElementById("imgdisplay");
+    
+    expandImg.src = x.src;
+   
+  
+  }
