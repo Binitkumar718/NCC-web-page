@@ -380,7 +380,9 @@ img {
    .show{
       width: 100%;
    }
-
+  .glry{
+     flex-direction: column;
+  }
  }
 
 /*styling of gallery section*/
@@ -410,8 +412,8 @@ padding: 10px;
 }
 .show{
    display: flex;
-   flex-direction: column;
-   width: %;
+   flex-direction: row;
+   width: 50%;
    padding: 15px;
 }
 .show img{
