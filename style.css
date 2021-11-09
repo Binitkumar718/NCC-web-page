@@ -398,6 +398,37 @@ background-color: white;
 /*styling of gallary sectiong starts here*/
 
 /*head*/
+h1{
+   font-weight:50px;
+   font-size:35px;
+   position:relative;
+   margin:10px;
+}
+h1::before{
+   content:'';
+   position:absolute;
+   width:100px;
+   height:3px;
+   background-color:darkblue;
+   bottom:-10px;
+   left:50%;
+   transform:translateX(-50%);
+   animation:animate 4s linear infinite;
+}
+@keyframes animate{
+   0%{
+       width:5%;
+   }
+   25%{
+      width:10%;
+   }
+   50%{
+       width:30%;
+   }
+   100%{
+       width:100%;
+   }
+}
 .galhead{
  text-align: center;
  padding-top: 3vh;
