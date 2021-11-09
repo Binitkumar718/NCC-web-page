@@ -410,7 +410,7 @@ h1::before{
    width:100px;
    height:3px;
    background-color:darkblue;
-   bottom:-10px;
+   bottom:-3px;
    left:50%;
    transform:translateX(-50%);
    animation:animate 4s linear infinite;
