@@ -252,26 +252,29 @@ img {
 /*styling of gallary sectiong starts here*/
 
 /*head*/
-h1{
-   font-weight:50px;
-   font-size:35px;
+.headncc{
+   font-weight:40px;
+   font-size:30px;
    position:relative;
    margin:10px;
 }
-h1::before{
+.headncc::before{
    content:'';
    position:absolute;
-   width:100px;
+   width:360px;
    height:3px;
    background-color:darkblue;
    bottom:-3px;
    left:50%;
    transform:translateX(-50%);
-   animation:animate 4s linear infinite;
+   animation:animate 4s ;
 }
 @keyframes animate{
    0%{
-       width:5%;
+       width:100%;
+   }
+   1%{
+      width:5%;
    }
    25%{
       width:10%;
@@ -404,16 +407,38 @@ h1::before{
       width: 90%;
    }
    .nit img{
-
+      margin: 14px 0;
       width: 90px;
       height: 90px;
    }
-   .show{
-      width: 100%;
+   .headncc{
+      font-weight:30px;
+      font-size:20px;
+      position:relative;
+      margin:10px;
+   }
+   .headncc::before{
+      width: 10px;
+      height: 3px;
    }
   .glry{
      flex-direction: column;
   }
+  .glry .show{
+     flex-direction: row;
+     width: 100%;
+
+  }
+  .show img {
+   width: 95%;
+   height: 90px;
+   padding: 0;
+   margin: 10px 10px 10px 0px;
+   border: 4px solid white;
+   opacity: 0.8;
+   margin: 10;
+   cursor: pointer;
+}
  }
 
 /*styling of gallery section*/
@@ -443,8 +468,8 @@ padding: 10px;
 }
 .show{
    display: flex;
-   flex-direction: row;
-   width: 50%;
+   flex-direction: column;
+   width: 40%;
    padding: 15px;
 }
 .show img{
