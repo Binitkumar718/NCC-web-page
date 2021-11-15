@@ -6,65 +6,33 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 *{box-sizing: border-box;
-
 }
 
+#content{
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
 
-/* Style tab links */
-.con-link {
-  background-color: #3787BA;
-  color: black;
-  display :flex;
-  flex-direction:column;
-  border: none;
-  
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 100%;
 }
-
-.tablink:hover {
-  background-color: rgb(2, 1, 1);
-  color: white;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: black;
-  display: none;
-  padding: 10px 20px;
-  height: 100%;
-  
-}
-.cont{
- display:flex;
- max-width: 1000px;
-margin: auto;
-
- }
- .cont .aside{
-   margin: 10px;
-   width: 250px;
- 
-  }
-  .cont .aside button{
-       border: 1px solid black;
-  }
-
-
-  .cont .main{
-   width: 750px;
-   height:auto;
-   
-   }
-   .cont .main p{
-       line-height: 30px;
-       font-size: larger;
-   }
+.index{
+  border: 1px solid black;
+ display: flex;
+ flex-direction: column;
+ position:fixed ;
+ width: 100px;
  
 
+ top: 50%;
+ left:0%;
+}
+.index a {
+text-decoration: none;
+color: white ;
+padding: 10px;
+background-color: #3787BA;
+border: 1px solid black;
+
+}
 
 </style>
 </head>
@@ -94,24 +62,23 @@ margin: auto;
       </nav>
       
 
-<section class="content">
+<section >
+ <div id="content">
 <!-- this  content -->
 
+<div class="index">
 
-<div class= "cont">
+  <a href="#about">about</a>
+  <a href="#history">history</a>
+  <a href="#why"> why</a>
+  <a href="#motto"> motto</a>
+</div>
+
 <!-- this s topic list-->
-
-<div class="aside" >
-  <button style="color: aliceblue;"class="con-link" onclick="openPage('about', this,'black')" id="defaultOpen">about</button>
-  <button style="color: aliceblue;"class="con-link" onclick="openPage('history', this, 'black')" >history</button>
-  <button  style="color: aliceblue;" class="con-link" onclick="openPage('certificate', this,'black')">motto</button>
-  <button  style="color: aliceblue;"class="con-link" onclick="openPage('genesis', this,'black')">why</button>
-  </div>
 
 <!-- this is topic content-->
 
-<div class="main">
-<div id="about" class="tabcontent">
+<div id="about" >
   <h3>ABOUT</h3>
 
   <ol> 
@@ -161,7 +128,7 @@ margin: auto;
          <br>
 </div>
 
-<div id="history" class="tabcontent">
+<div id="history" >
   <h3>history</h3>
   <br>
   <br>
@@ -201,7 +168,7 @@ margin: auto;
 </div>
 
 
-<div id="certificate" class="tabcontent">
+<div id="motto">
   <h3>motto</h3>
   <br>
   <br>
@@ -253,7 +220,7 @@ margin: auto;
     <br>
 </div>
 
-<div id="genesis" class="tabcontent">
+<div id="why" >
   <h3>WHY </h3>
   <br>
   <br>
@@ -272,6 +239,7 @@ margin: auto;
     Certificate – C: It is the most important certificate for NCC cadet. Now it can be written in the 3rd year of training, in the 3rd year of degree course / those having B certificate can write it in the first year after his +2 and in the 1st year of degree by SD / SW cadets only.The candidate must be possessing a ‘B’ certificate Must have attended two ATCs or one ATC and in addition to it RD Camp Delhi,Centrally Organised Camp,Para Training Camp,Attachment Training with service units,National Integration Camp,Youth Exchange Programme,Foreign Cruise(Navy).</p>
 </div>
 </div>
+</div>
 
 </div>
 </section>
@@ -287,21 +255,6 @@ margin: auto;
     </div>
   </footer>
 <script>
-function openPage(pageName,elmnt) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
 
 
 
