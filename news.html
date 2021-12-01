@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
+
         .contain{
             display: flex;
         }
@@ -21,6 +22,90 @@
             height: auto;
             flex: 3;
         }
+        .box{
+            border: 1px solid black;
+            height: 100px;
+            width: 80%;
+            background-color: aliceblue;
+            margin: auto;
+            
+         color:black;
+
+        }
+        .main{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .innerbox{
+           
+           
+            background-color: aliceblue;
+           
+            display: flex;
+         color:black;
+        }
+        .photo{
+            
+            width: 20%;
+           background-image: url(./blank-profile-picture-g65bf49a3f_640.png);
+           background-size:cover;
+            height: 90px;
+        }
+        .content{
+           
+            width: 70%;
+            height: 70px;
+          font-weight: bold;
+          text-align: center;
+          margin-top: 10px;
+          padding-top: 10px;
+        }
+        .clicked{
+            height: auto;
+        }
+        .view{
+            
+            width: 20%;
+          height: 50px;
+          margin-top: 10px;
+
+          background-color: red;
+          color: antiquewhite;
+          text-transform: capitalize;
+          font-weight: 100;
+          font-size: larger;
+          padding:15px ;
+          cursor: pointer;
+        }
+        .jhoncena{
+            display: none;
+        }
+        .ucanseeme{
+            display: block;
+             padding:  30px;
+        }
+        @media screen and (max-width : 600px) {
+            .box{
+                width:100%;
+                height: 70px;
+            }
+            .content{
+                height: 60px;
+                margin-top: 0;
+            }
+            .view{
+                height: 60px;
+                margin-top: 0;
+
+            }
+            .clicked{
+            height: auto;
+        }
+        .photo{
+            height: 60px;
+        }
+        }
+        
     </style>
 </head>
 <body>
@@ -45,12 +130,53 @@
 
       <!-- content -->
 
-      <section class="learn">
+      <section class="main">
+
+     
+
+        <div class="box">
+            <div class="innerbox">
+            
+            <div class="content"> alll the cadets of nit ap are informed to contect the jjunior under officer </div>
+            <button class="view" id="click" >read</button>
+            <span  style="font-weight: normal; padding: 10px ;">12:02 pm - 30 nov 2021</span></div>
+
+            <div class="jhoncena">
+                <hr>
+                <br>
+                <img src="./blank-profile-picture-g65bf49a3f_640.png" alt="" style="height: 100px;"> 
+                <h1> today nit ap Lorem ipsum d?</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nisi sint, doloremque sequi fugiat optio veniam dolorum ab modi enim vel ipsum earum rerum quaerat sapiente nemo eos soluta minima!</p>
+                <p>therefore Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus inventore aspernatur, nisi ut quas voluptas rem minus necessitatibus eos reiciendis cum cupiditate! Facilis?</p>
+               <br>
+                <hr>
+            </div>
+         </div>
+         <br>
+         <div class="box">
+            <div class="innerbox">
+            
+            <div class="content"> alll the cadets of nit ap are informed to contect the jjunior under officer <br> </div>
+            <button class="view" id="click" >read</button>
+            <span  style="font-weight: normal; padding: 10px ;">12:02 pm - 30 nov 2021</span>
+        </div>
+           
+
+            <div class="jhoncena">
+                <img src="./blank-profile-picture-g65bf49a3f_640.png" alt="" style="height: 100px;"> 
+                <h1> today nit ap Lorem ipsum d?</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nisi sint, doloremque sequi fugiat optio veniam dolorum ab modi enim vel ipsum earum rerum quaerat sapiente nemo eos soluta minima!</p>
+                <p>therefore Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus inventore aspernatur, nisi ut quas voluptas rem minus necessitatibus eos reiciendis cum cupiditate! Facilis?</p>
+               
+            </div>
+         </div>
+         <br>
+        
 
 
 
       </section>
-      <!-- here is the footer--> 
+      <!-- here is the foote--> 
       <footer class="foot temp">
         <H1 style="font-weight: normal; font-size: medium;"> &copy NATIONAL INSTITUTE OF TECHNOLOGY ,JOTE . ARUNCHAL PRADESH</H1>
         <div class="sociallink" >
@@ -61,5 +187,35 @@
         </div>
       </footer>
 </body>
-<script src="learn.js"> </script>
+<script > 
+
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.link');
+
+    
+ 
+     burger.addEventListener('click',()=>{
+       nav.classList.toggle('nav-active');
+
+       burger.classList.toggle('toggle');
+     });
+
+     
+    
+  }
+  navSlide();
+
+  const view = document.querySelector('#click');
+  const box = document.querySelector('.box');
+  const jhoncena = document.querySelector('.jhoncena');
+  view.addEventListener('click', function(){
+     box.classList.toggle('clicked');
+     jhoncena.classList.toggle('ucanseeme');
+
+  });
+
+ 
+  </script>
 </html>
