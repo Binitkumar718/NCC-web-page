@@ -9,27 +9,16 @@
     <link rel="stylesheet" href="style.css">
     <style>
 
-        .contain{
-            display: flex;
-        }
-        .contain .aside{
-            border: 1px solid black;
-            height: auto;
-            flex-grow: 1;
-        }
-        .contain .main{
-            border: 1px solid black;
-            height: auto;
-            flex: 3;
-        }
+       
+      
         .box{
             border: 1px solid black;
-            height: 100px;
+            min-height:400px;
             width: 80%;
-            background-color: aliceblue;
+            background-color: #3787BA;
             margin: auto;
             
-         color:black;
+         color:rgb(209, 207, 207);
 
         }
         .main{
@@ -39,10 +28,10 @@
         .innerbox{
            
            
-            background-color: aliceblue;
-           
+            background-color:#260075;
+           border-radius: 10px;
             display: flex;
-         color:black;
+         color:white;
         }
         .photo{
             
@@ -54,15 +43,14 @@
         .content{
            
             width: 70%;
-            height: 70px;
+            height: auto;
           font-weight: bold;
           text-align: center;
           margin-top: 10px;
-          padding-top: 10px;
+          
         }
-        .clicked{
-            height: auto;
-        }
+       
+        
         .view{
             
             width: 20%;
@@ -77,12 +65,10 @@
           padding:15px ;
           cursor: pointer;
         }
-        .jhoncena{
-            display: none;
-        }
+       
         .ucanseeme{
             display: block;
-             padding:  30px;
+           
         }
         @media screen and (max-width : 600px) {
             .box{
@@ -137,32 +123,13 @@
         <div class="box">
             <div class="innerbox">
             
-            <div class="content"> alll the cadets of nit ap are informed to contect the jjunior under officer </div>
-            <button class="view" id="click" >read</button>
-            <span  style="font-weight: normal; padding: 10px ;">12:02 pm - 30 nov 2021</span></div>
-
-            <div class="jhoncena">
-                <hr>
-                <br>
-                <img src="./blank-profile-picture-g65bf49a3f_640.png" alt="" style="height: 100px;"> 
-                <h1> today nit ap Lorem ipsum d?</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nisi sint, doloremque sequi fugiat optio veniam dolorum ab modi enim vel ipsum earum rerum quaerat sapiente nemo eos soluta minima!</p>
-                <p>therefore Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus inventore aspernatur, nisi ut quas voluptas rem minus necessitatibus eos reiciendis cum cupiditate! Facilis?</p>
-               <br>
-                <hr>
-            </div>
-         </div>
-         <br>
-         <div class="box">
-            <div class="innerbox">
-            
             <div class="content"> alll the cadets of nit ap are informed to contect the jjunior under officer <br> </div>
-            <button class="view" id="click" >read</button>
+            
             <span  style="font-weight: normal; padding: 10px ;">12:02 pm - 30 nov 2021</span>
         </div>
            
 
-            <div class="jhoncena">
+            <div class="jhoncena" id="n2">
                 <img src="./blank-profile-picture-g65bf49a3f_640.png" alt="" style="height: 100px;"> 
                 <h1> today nit ap Lorem ipsum d?</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nisi sint, doloremque sequi fugiat optio veniam dolorum ab modi enim vel ipsum earum rerum quaerat sapiente nemo eos soluta minima!</p>
@@ -170,9 +137,45 @@
                
             </div>
          </div>
+
+         <br>
+         <div class="box">
+            <div class="innerbox">
+            
+            <div class="content"> alll the cadets of nit ap are informed to contect the jjunior under officer <br> </div>
+            
+            <span  style="font-weight: normal; padding: 10px ;">12:02 pm - 30 nov 2021</span>
+        </div>
+           
+
+            <div class="jhoncena" id="n2">
+                <img src="./blank-profile-picture-g65bf49a3f_640.png" alt="" style="height: 100px;"> 
+                <h1> today nit ap Lorem ipsum d?</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nisi sint, doloremque sequi fugiat optio veniam dolorum ab modi enim vel ipsum earum rerum quaerat sapiente nemo eos soluta minima!</p>
+                <p>therefore Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus inventore aspernatur, nisi ut quas voluptas rem minus necessitatibus eos reiciendis cum cupiditate! Facilis?</p>
+               
+            </div>
+         </div>
+
          <br>
         
+         <div class="box">
+            <div class="innerbox">
+            
+            <div class="content"> alll the cadets of nit ap are informed to contect the jjunior under officer <br> </div>
+            
+            <span  style="font-weight: normal; padding: 10px ;">12:02 pm - 30 nov 2021</span>
+        </div>
+           
 
+            <div class="jhoncena" id="n2">
+                <img src="./blank-profile-picture-g65bf49a3f_640.png" alt="" style="height: 100px;"> 
+                <h1> today nit ap Lorem ipsum d?</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias nisi sint, doloremque sequi fugiat optio veniam dolorum ab modi enim vel ipsum earum rerum quaerat sapiente nemo eos soluta minima!</p>
+                <p>therefore Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus inventore aspernatur, nisi ut quas voluptas rem minus necessitatibus eos reiciendis cum cupiditate! Facilis?</p>
+               
+            </div>
+         </div>
 
 
       </section>
@@ -198,8 +201,8 @@ const navSlide = () => {
  
      burger.addEventListener('click',()=>{
        nav.classList.toggle('nav-active');
-
        burger.classList.toggle('toggle');
+       document.body.toggle.style.overflowY= 'hidden'
      });
 
      

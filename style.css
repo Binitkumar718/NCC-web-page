@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin:0;
     scroll-behavior: smooth;
+    position: relative;
 }
 
 .temp{
@@ -27,6 +28,7 @@
    background-color: #260075;
    height: 12vh;
    box-shadow: 1px 1px 30px black;
+   width: 100%;
 }
 .nav ul{
     display: flex;
@@ -34,12 +36,13 @@
 .nav li{
    list-style: none;
    padding: 10px;
-   width: 100%;
+   width:200px;
    text-transform: uppercase;
-   background-color: #260075;
+ 
 }
+
 .nav a{
-    background-color:#260075;
+  
     color: white;
     width: 100%;
     font-size: larger;
@@ -51,14 +54,18 @@
 }
 
 .link .active{
-   background-color: #030000;
-   box-shadow: 1px 2px 3pxp;
-   color:white;
+   background-color: #ddcccc;
+   box-shadow: 1px 2px 3px;
+   color:rgb(112, 107, 107);
    border-radius: 10px;
 }
 .nav a:hover{
    color: #6b4c4c;
    
+  }
+  .tab-link{
+     display: none;
+     width: 0;
   }
 
 /*for responsive STYLING */
@@ -97,15 +104,19 @@
        right: 0px;
        height: 85vh;
        top:12vh;
-       background-color:#260075 ;
-       display: flex;
+       background-color:rgba(38,0,117, 0.9)  ;
+
+        display: flex;
        flex-direction: column;
        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
+        width:100%;
+       transform: translateX(100%);
         transition: 0.5s ease-in;
        z-index: 1;
        padding: 30px;
+   }
+   .link{
+      opacity: 0;display: none;
    }
    .ncc{
       display: none;
@@ -128,8 +139,8 @@
    
 }
    .nav-active{
-    transform: translateX(0);
-   
+   transform: translate(0);
+   opacity: 1;
    }
    .toggle .line1{
        transform: rotate(45deg) translate(-5px,6px);
@@ -142,6 +153,9 @@
        transform: rotate(-45deg) translate(-5px,-6px);
       width: 30px;
        
+     }
+     .bsdk{
+        display: none;
      }
     
 /* styling of head section */
